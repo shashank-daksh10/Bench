@@ -62,6 +62,8 @@ public class StudentController {
         return studentService.findByDepartmentName(departmentName);
     }
 
+
+
     @GetMapping("/native") // example of native query for name starts with and age greater than
     //also we can use findeMethod like starWith and EndsWith too,but i have used native.
     public List<Student>nativeNameAndAge(@RequestParam String name,@RequestParam int age){

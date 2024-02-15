@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @Document(collection = "student")
-public class Student { // will add emebeded class later
+public class Student { // will add reference class later
 
     @Id
     private String id;

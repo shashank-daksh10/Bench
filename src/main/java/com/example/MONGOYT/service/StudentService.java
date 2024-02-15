@@ -74,6 +74,7 @@ public class StudentService {
         return studentList;
     }
 
+
     public List<Student> findByNameAndAgeNatve(String name, int age) {
         List<Student>studentList=studentRepository.findStudentsByNameAndAgeNativeQuery(name,age);
         return studentList;

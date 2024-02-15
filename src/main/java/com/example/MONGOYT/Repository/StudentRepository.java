@@ -13,6 +13,7 @@ public interface StudentRepository extends MongoRepository<Student,String> {
 
     List<Student> findByDepartmentDepartmentName(String departmentName);
 
+
     @Query("{ 'name': { '$regex':'^?0', '$options': 'i' }, 'age': { '$gte': ?1 } }")
     //here ?0 means parameter i.e first para=0 then second =1 and so on.
     // ^ is used to have value starts with
